@@ -1,0 +1,217 @@
+/*==================================================
+    AS ROBIN
+    Personal Portfolio
+    Design System
+==================================================*/
+
+:root{
+
+    /*==============================
+            Brand Colors
+    ==============================*/
+
+    --primary:#2563EB;
+    --primary-dark:#1D4ED8;
+    --primary-light:#60A5FA;
+
+    --secondary:#38BDF8;
+
+    --accent:#06B6D4;
+
+    --success:#22C55E;
+
+    --warning:#F59E0B;
+
+    --danger:#EF4444;
+
+
+
+    /*==============================
+            Background
+    ==============================*/
+
+    --bg:#030712;
+
+    --bg-secondary:#0B1120;
+
+    --bg-card:#111827;
+
+    --bg-glass:rgba(255,255,255,.05);
+
+
+
+    /*==============================
+              Text
+    ==============================*/
+
+    --text:#FFFFFF;
+
+    --text-light:#CBD5E1;
+
+    --text-muted:#94A3B8;
+
+    --text-dark:#64748B;
+
+
+
+    /*==============================
+              Border
+    ==============================*/
+
+    --border:rgba(255,255,255,.08);
+
+    --border-light:rgba(255,255,255,.15);
+
+
+
+    /*==============================
+              Glass
+    ==============================*/
+
+    --glass-bg:rgba(255,255,255,.06);
+
+    --glass-border:rgba(255,255,255,.12);
+
+    --glass-blur:20px;
+
+
+
+    /*==============================
+             Shadow
+    ==============================*/
+
+    --shadow-xs:0 2px 8px rgba(0,0,0,.15);
+
+    --shadow-sm:0 6px 20px rgba(0,0,0,.20);
+
+    --shadow-md:0 15px 35px rgba(0,0,0,.25);
+
+    --shadow-lg:0 25px 60px rgba(0,0,0,.35);
+
+    --shadow-primary:0 0 40px rgba(37,99,235,.35);
+
+
+
+    /*==============================
+            Border Radius
+    ==============================*/
+
+    --radius-xs:6px;
+
+    --radius-sm:10px;
+
+    --radius-md:16px;
+
+    --radius-lg:24px;
+
+    --radius-xl:40px;
+
+    --radius-full:999px;
+
+
+
+    /*==============================
+              Transition
+    ==============================*/
+
+    --transition-fast:.25s ease;
+
+    --transition:.35s ease;
+
+    --transition-slow:.60s ease;
+
+
+
+    /*==============================
+             Layout
+    ==============================*/
+
+    --container:1320px;
+
+    --header-height:90px;
+
+    --section-space:120px;
+
+
+
+    /*==============================
+             Z Index
+    ==============================*/
+
+    --z-loader:99999;
+
+    --z-cursor:9999;
+
+    --z-header:999;
+
+    --z-dropdown:500;
+
+    --z-modal:9999;
+
+
+
+    /*==============================
+               Fonts
+    ==============================*/
+
+    --font-en:'Inter',sans-serif;
+
+    --font-bn:'Hind Siliguri',sans-serif;
+
+
+
+    /*==============================
+            Font Size
+    ==============================*/
+
+    --fs-xs:.80rem;
+
+    --fs-sm:.90rem;
+
+    --fs-base:1rem;
+
+    --fs-lg:1.15rem;
+
+    --fs-xl:1.4rem;
+
+    --fs-2xl:2rem;
+
+    --fs-3xl:3rem;
+
+    --fs-4xl:4rem;
+
+    --fs-5xl:5rem;
+
+}
+
+/*=========================================
+            THEME VARIABLES
+=========================================*/
+
+:root{
+
+    --bg:#050816;
+    --surface:#0B1220;
+
+    --text:#ffffff;
+    --text-light:#CBD5E1;
+    --text-muted:#94A3B8;
+
+    --primary:#2563EB;
+    --primary-light:#60A5FA;
+
+}
+
+[data-theme="light"]{
+
+    --bg:#F8FAFC;
+    --surface:#FFFFFF;
+
+    --text:#111827;
+    --text-light:#475569;
+    --text-muted:#64748B;
+
+    --primary:#2563EB;
+    --primary-light:#1D4ED8;
+
+}

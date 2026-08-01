@@ -1,0 +1,440 @@
+/*=========================================
+        HERO RESPONSIVE LAYOUT
+=========================================*/
+
+.hero-wrapper{
+
+    display:grid;
+
+    grid-template-columns:1.1fr .9fr;
+
+    align-items:center;
+
+    gap:80px;
+
+}
+
+.hero-image{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.hero-image img{
+
+    width:100%;
+
+    max-width:420px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    z-index:2;
+
+}
+
+.profile-glow{
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(circle,
+
+    rgba(37,99,235,.35),
+
+    transparent 70%);
+
+    animation:pulseGlow 5s ease infinite;
+
+}
+
+@keyframes pulseGlow{
+
+    0%,100%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.08);
+
+    }
+
+}
+
+/*=========================================
+            SKILLS RESPONSIVE
+=========================================*/
+
+@media(max-width:992px){
+
+.skills-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.skills-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media (max-width:992px){
+
+    .projects-grid{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .projects-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:992px){
+
+.contact-wrapper{
+
+grid-template-columns:1fr;
+
+}
+
+}
+/*=========================================
+        LARGE DEVICES
+=========================================*/
+
+@media (max-width:1200px){
+
+.container{
+
+    width:92%;
+
+}
+
+.hero-wrapper{
+
+    gap:50px;
+
+}
+
+}
+
+/*=========================================
+        TABLET
+=========================================*/
+
+@media (max-width:992px){
+
+.header{
+
+    height:80px;
+
+}
+
+.nav-menu{
+
+    display:none;
+
+}
+
+.mobile-toggle{
+
+    display:flex;
+
+    color:#fff;
+
+    font-size:32px;
+
+    cursor:pointer;
+
+}
+
+.hero{
+
+    padding-top:140px;
+
+}
+
+.hero-wrapper{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+}
+
+.hero-content{
+
+    order:2;
+
+}
+
+.hero-image{
+
+    order:1;
+
+}
+
+.hero-buttons{
+
+    justify-content:center;
+
+}
+
+.social{
+
+    justify-content:center;
+
+}
+
+.about-wrapper{
+
+    grid-template-columns:1fr;
+
+}
+
+.skills-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.projects-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.contact-wrapper{
+
+    grid-template-columns:1fr;
+
+}
+
+.footer-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/*=========================================
+        MOBILE
+=========================================*/
+
+@media (max-width:768px){
+
+.hero-content h1{
+
+    font-size:42px;
+
+}
+
+.hero-content h2{
+
+    font-size:28px;
+
+}
+
+.profile-wrapper{
+
+    width:320px;
+
+    height:320px;
+
+}
+
+.profile-wrapper img{
+
+    width:290px;
+
+    height:290px;
+
+}
+
+.skills-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.projects-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.about-info{
+
+    grid-template-columns:1fr;
+
+}
+
+.timeline-item{
+
+    flex-direction:column;
+
+}
+
+.timeline::before{
+
+    display:none;
+
+}
+
+.footer-grid{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+}
+
+.footer-social{
+
+    justify-content:center;
+
+}
+
+}
+
+/*=========================================
+        SMALL MOBILE
+=========================================*/
+
+@media (max-width:480px){
+
+.hero-content h1{
+
+    font-size:34px;
+
+}
+
+.hero-content p{
+
+    font-size:15px;
+
+}
+
+.btn{
+
+    width:100%;
+
+}
+
+.hero-buttons{
+
+    flex-direction:column;
+
+}
+
+.profile-wrapper{
+
+    width:260px;
+
+    height:260px;
+
+}
+
+.profile-wrapper img{
+
+    width:230px;
+
+    height:230px;
+
+}
+
+.section-heading h2{
+
+    font-size:32px;
+
+}
+
+}
+
+/*=========================================
+        MOBILE MENU
+=========================================*/
+
+@media(max-width:992px){
+
+.nav-menu{
+
+    position:fixed;
+
+    top:0;
+
+    right:-100%;
+
+    width:280px;
+
+    height:100vh;
+
+    background:rgba(10,15,30,.96);
+
+    backdrop-filter:blur(25px);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    gap:30px;
+
+    transition:.4s;
+
+    z-index:1000;
+
+}
+
+.nav-menu.active{
+
+    right:0;
+
+}
+
+.nav-menu a{
+
+    font-size:20px;
+
+    color:#fff;
+
+    text-align:center;
+
+}
+
+}
