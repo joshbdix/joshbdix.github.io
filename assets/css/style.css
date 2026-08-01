@@ -1,0 +1,29 @@
+/*=========================================
+        IMPORT FILES
+=========================================*/
+
+@import url("variables.css");
+
+@import url("typography.css");
+
+@import url("layout.css");
+
+@import url("navbar.css");
+
+@import url("hero.css");
+
+@import url("about.css");
+
+@import url("skills.css");
+
+@import url("experience.css");
+
+@import url("projects.css");
+
+@import url("contact.css");
+
+@import url("footer.css");
+
+@import url("animations.css");
+
+@import url("responsive.css");
