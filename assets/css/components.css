@@ -1910,3 +1910,84 @@
     transform:translateY(-6px);
 
 }
+
+/*=========================================
+        HERO RESPONSIVE LAYOUT
+=========================================*/
+
+.hero-wrapper{
+
+    display:grid;
+
+    grid-template-columns:1.1fr .9fr;
+
+    align-items:center;
+
+    gap:80px;
+
+}
+
+.hero-image{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.hero-image img{
+
+    width:100%;
+
+    max-width:420px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    z-index:2;
+
+}
+
+.profile-glow{
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(circle,
+
+    rgba(37,99,235,.35),
+
+    transparent 70%);
+
+    animation:pulseGlow 5s ease infinite;
+
+}
+
+@keyframes pulseGlow{
+
+    0%,100%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.08);
+
+    }
+
+}
+
